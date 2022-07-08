@@ -1,0 +1,8 @@
+{
+    "emmet.preferences": {
+    "css.valueSeparator": ": "
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
+}

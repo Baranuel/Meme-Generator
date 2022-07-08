@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(243, 198, 21);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.meme{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+.image {
+  min-width: 85vh;
+  max-width: 100%;
+  max-height: 600px;
+  min-height: 600px;
+
+  border: 10px solid black;
+  border-radius:2px;
+  box-shadow: 5px 10px 2px rgba(0, 0, 0,1);
+}
+
+.meme-text{
+  font-size: 5rem;
+  font-weight: 1200;
+  color: white;
+  text-shadow:5px 0 0 black, -5px 0 0 black, 0 5px 0 black, 0 -5px 0 black, 4px 4px black, -4px -4px 0 black, 4px -4px 0 black, -4px 4px 0 black;
+  position: absolute;
+}
+
+.text-top{
+  top: 0rem;
+  z-index:100;
+}
+
+.text-bottom{
+  bottom: 0rem;
+  z-index:100;
+}
+.input{
+  padding: 0.5rem 1rem;
+  margin: 1.5rem;
+  font-size: 1.2rem;
+  border: 5px solid black;
+  background-color: rgb(247, 221, 160);
+  font-weight: 700;
+  color:  black;
+
+}
+
+.input:focus {
+  border: 10px solid rgb(240, 86, 15);
+  outline: none
+}
+.change-picture {
+  margin: 1rem;
+  padding: 1.5rem 4rem;
+  font-size: 1.6rem;
+  color: white;
+  border: 10px solid rgb(93, 19, 78);
+  background-color: rgb(198, 2, 159);
+  box-shadow: 5px 10px 2px rgb(45, 15, 39);
+  transition: all 100ms ease-in-out;
+
+}
+
+.change-picture:hover {
+  cursor: pointer;
+  transform: translate(1%,-5%);
+  box-shadow: 10px 12px 4px rgb(45, 15, 39);
+}
+.change-picture:active {
+  transform: translate(2%,0%);
+  box-shadow: 2px  2px 2px rgb(45, 15, 39);
+
+}
